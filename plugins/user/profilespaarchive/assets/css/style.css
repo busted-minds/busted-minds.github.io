@@ -1,0 +1,18 @@
+.profile-edit .icon-plus:before, .registration .icon-plus:before{
+  content: "\f067";
+  color: #fff;
+  font-family: fontawesome;
+}
+.profile-edit .icon-minus:before, .registration .icon-minus:before{
+  content: "\f00d";
+  color: #fff;
+  font-family: fontawesome;
+}
+.profile-edit .icon-move:before, .registration .icon-move:before{
+  content: "\f255";
+  font-family: fontawesome;
+  color: #fff;
+}
+.profile-edit .subform-repeatable > .btn-toolbar, .registration.subform-repeatable > .btn-toolbar{
+  margin-bottom: 20px;
+}
