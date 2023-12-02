@@ -1,0 +1,7 @@
+async function loadModalWrapper(){const response=await fetch(`${Joomla.getOptions('easystore.base')}/index.php?option=com_easystore&task=display.createModal`);const data=await response.json();document.body.insertAdjacentHTML('beforeend',data.data);}
+document.addEventListener('DOMContentLoaded',async()=>{await loadModalWrapper();const closeButton=document.querySelector('.modal-close-button');const backdrop=document.querySelector('.modal-backdrop');const closeBtn=document.querySelector('[close-easystore-modal]');const wrapper=document.querySelector('#easystore-modal');const content=wrapper.querySelector('.modal-content');if(closeButton){closeButton.addEventListener('click',()=>{closeModal();});}
+if(backdrop){backdrop.addEventListener('click',()=>{closeModal();});}
+if(closeBtn){closeBtn.addEventListener('click',()=>{closeModal();});}
+function closeModal(){wrapper.classList.remove('active');updateAttributes(wrapper);content.innerHTML=null;}
+function updateAttributes(wrapper){wrapper.setAttribute('aria-hidden','true');wrapper.setAttribute('aria-busy','false');document.body.classList.remove('easystore-modal-open');}
+document.addEventListener('keyup',event=>{if(event.key==='Escape'){closeModal();}});});

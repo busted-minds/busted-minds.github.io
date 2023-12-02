@@ -1,0 +1,217 @@
+/* Product Single */
+.easystore-product-single .easystore-product-title {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.easystore-product-single .easystore-btn-add-to-cart {
+    margin-bottom: 8px;
+}
+
+.easystore-product-single .easystore-product-variants {
+    gap: 32px;
+}
+
+/* Inventory */
+.easystore-product-inventory {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.easystore-product-inventory-icon {
+    position: relative;
+    width: 8px;
+    height: 8px;
+    border-radius: 100px;
+    background-color: #54c63a;
+}
+
+.easystore-product-inventory-icon:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #54c63a;
+    border-radius: 100%;
+    animation: easystore-inventory-pulse 2s linear infinite;
+}
+
+.easystore-product-inventory-icon.easystore-no-stock,
+.easystore-product-inventory-icon.easystore-no-stock:before {
+    background: #d9534f;
+}
+
+@keyframes easystore-inventory-pulse {
+    0% {
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
+
+/* Social Share */
+.easystore-social-share {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 16px;
+}
+
+.easystore-social-share > li a {
+    text-decoration: none;
+    outline: none;
+    align-items: center;
+    justify-content: center;
+    display: inline-flex;
+}
+
+/* Product Single (continued) */
+.easystore-product-single .easystore-btn-add-to-cart,
+.easystore-product-single .easystore-btn-add-to-wishlist {
+    display: block;
+    width: 100%;
+    font-size: 18px;
+    padding: 12px 24px;
+}
+
+.easystore-product-single .easystore-product-title,
+.easystore-product-single .easystore-product-category,
+.easystore-product-single .easystore-variant-title.easystore-block-label {
+    margin-bottom: 16px;
+}
+
+.easystore-product-single .easystore-ratings-container,
+.easystore-product-single .easystore-product-inventory {
+    margin-bottom: 20px;
+}
+
+.easystore-product-single .easystore-btn-add-to-wishlist,
+.easystore-product-single .easystore-product-price,
+.easystore-product-single .easystore-quantity-container,
+.easystore-product-single .easystore-product-variants,
+.easystore-product-single .easystore-social-share-container {
+    margin-bottom: 32px;
+}
+
+/* Thumbnail */
+.easystore-product-image {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 125%;
+}
+
+.easystore-product-image img {
+    display: block;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden;
+    object-fit: cover;
+    object-position: center center;
+    transition: opacity 200ms ease;
+}
+
+.easystore-product-single .easystore-product-image {
+    margin-bottom: 8px;
+}
+
+/* Gallery */
+.easystore-product-gallery {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
+}
+
+.easystore-product-gallery > .easystore-gallery-image {
+    text-align: inherit;
+    border: 1px solid transparent;
+    overflow: hidden;
+}
+
+.easystore-product-gallery > .easystore-gallery-image.active {
+    border-color: var(--easystore-primary-color);
+}
+
+/* Reviews */
+.easystore-summary-value,
+.easystore-summary-content,
+.easystore-review-item .easystore-review-title {
+    font-weight: 600;
+}
+
+.easystore-summary-total,
+.easystore-review-item .easystore-review-user {
+    font-weight: 400;
+}
+
+.easystore-summary-count,
+.easystore-reviews {
+    display: flex;
+}
+
+.easystore-summary-stars,
+.easystore-summary-count,
+.easystore-review-item .easystore-review-ratings,
+.easystore-review-item .easystore-review-user {
+    margin-bottom: 16px;
+}
+
+.easystore-review-validation-error {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.easystore-review-container {
+    border-top: 1px solid var(--easystore-border-color);
+    padding-top: 64px;
+    margin-top: 64px;
+}
+.easystore-reviews-summary {
+    margin-bottom: 24px;
+}
+
+.easystore-summary-count {
+    align-items: flex-end;
+    gap: 6px;
+}
+
+.easystore-summary-value {
+    font-size: 32px;
+    line-height: 1.2;
+}
+
+.easystore-summary-total {
+    font-size: 16px;
+}
+
+.easystore-summary-stars .easystore-rating-stars {
+    font-size: 36px;
+}
+
+.easystore-reviews {
+    flex-direction: column;
+    gap: 64px;
+}
+
+.easystore-review-item .easystore-review-title {
+    font-size: 18px;
+    line-height: 32px;
+}
+
+.easystore-review-item .easystore-review-user {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--easystore-secondary-color);
+    margin-bottom: 24px;
+}
