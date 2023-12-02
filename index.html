@@ -79,40 +79,7 @@ h6{font-family: 'Sora', sans-serif;text-decoration: none;}
 }
 @media (max-width:767px){.sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a{font-size: 14px;}
 }
-/* Logo Styles */
-.logo {
-  max-width: 100%; /* Ensure logo is responsive */
-}
 
-@media only screen and (max-width: 767px) {
-  .logo {
-    max-width: 80px; /* Adjust as needed */
-  }
-}
-
-/* Off-canvas Menu Styles */
-.offcanvas-menu {
-  position: fixed;
-  right: 0;
-  top: 0;
-}
-
-.offcanvas-inner {
-  padding-right: 20px; /* Adjust as needed */
-}
-
-/* General Logo Image Styles */
-.logo-image,
-.logo-image-phone {
-  height: 70px;
-  max-width: 135px;
-}
-
-
-
-	
-
-	
 .sppb-carousel-extended-heading, .btn.btn-link, .sppb-addon.sppb-addon-articles-layout .sppb-addon-article.audio-format .sppb-meta-category-wrap, .sppb-addon.sppb-addon-articles-layout .sppb-addon-article.audio-format .sppb-article-meta, .sppb-addon.sppb-addon-articles-layout.layout-bourbon .show-all-wrap .sppb-btn, .sppb-addon.sppb-addon-articles-layout.layout-geisha .img-wrap .inner-content, .sppb-addon-audio-carousel .sppb-articles-carousel-img, .sppb-btn, #sp-bottom, .sppb-nav li a, .sp-page-title-sub-heading, .breadcrumb-item, .sppb-form-control, .view-category #sp-main-body .blog.episode-list-style-02 .article .article-body .article-title-wrap .article-info span.published, .view-category #sp-main-body .blog.episode-list-style-02 .article .article-body .readmore-wrapper .article-info span.createdby > span, .view-category #sp-main-body .blog.episode-list-style-02 .article .article-body .readmore-wrapper .readmore a span, .view-category #sp-main-body .blog.episode-list-style-03 .article .article-body .article-title-wrap .article-info span, .view-category #sp-main-body .blog.episode-list-style-02 .article .article-body .readmore-wrapper .article-info span.createdby a span, .spauthorarchive-department-title, .spauthorarchive-author-title-2, .podcast-title,  .about-author .sppb-addon-audio-carousel.layout-classic .sppb-articles-carousel-link, .offcanvas-inner, .sppb-addon-audio-carousel .bx-controls .bx-pager.bx-default-pager .bx-pager-item a, .article-details-top-img .article-info span, .article-details-top-right  .article-info span, .product-price-container, .product-sku, .manufacturer-brand, .view-category .blog .article .article-body .article-title-wrap .article-info, .view-category .blog .article .article-body .article-title-wrap .audio-duration, .j2store-cart-button{font-family: 'Sora', sans-serif;font-size: 16px;text-decoration: none;}
 .btn {
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.1);
@@ -170,7 +137,17 @@ a.btn {color:#fff;}
     color: #3c3838;
     margin-top: 10px;
 }
+.logo-image {height:60px;width:115px;}.logo-image-phone {height:55px;width:110px;}
+
+	<style>
+  @media (max-width: 767px) {
+    .offcanvas-menu {
+      right: 0;
+      left: auto;
+    }
+  }
 </style>
+	</style>
 <script type="application/json" class="joomla-script-options new">{"csrf.token":"87de685139e355806e06dbba8ec9ff76","data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"system.paths":{"root":"\/2020\/podcast","base":"\/2020\/podcast"}}</script>
 <script src="media/jui/js/jquery.min64a4.js?a7baf0c5daa2e02847853aa3ae315898" type="text/javascript"></script>
 <script src="media/jui/js/jquery-noconflict64a4.js?a7baf0c5daa2e02847853aa3ae315898" type="text/javascript"></script>
@@ -320,8 +297,7 @@ jQuery(function($){
 <header id="sp-header"><div class="fluid-container"><div class="container-inner"><div class="row"><div id="sp-logo" class="col-sm-6 col-lg-2">
 <div class="sp-column"><a id="offcanvas-toggler" aria-label="Navigation" class="offcanvas-toggler-left d-block d-lg-none" href="#">
 <span class="fa fa-bars" aria-hidden="true" title="Navigation"></span></a>
-<div class="logo logo-small"><a href="index.html"><img class="logo-image" src="images/nlogo.png" alt="Busted Minds"></a></div>
-
+<div class="logo"><a href="index.html"><img class="logo-image" src="images/nlogo.png" alt="Busted Minds"></a>
 </div></div></div>
 <div id="sp-menu" class="col-4 col-lg-6"><div class="sp-column"><nav class="sp-megamenu-wrapper" role="navigation">
 <ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
