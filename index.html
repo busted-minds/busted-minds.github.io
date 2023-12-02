@@ -97,6 +97,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <style>@media(max-width: 992px) {.logo-image {height: 40px;}.logo-image-phone {height: 40px;}}</style>
 <style>@media(max-width: 576px) {.logo-image {height: 40px;}.logo-image-phone {height: 40px;}}</style>
 <style>
+/* Add this CSS code to your stylesheet */
+
+/* Style for the Join button */
+.easystore-join-button {
+  display: inline-block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  background-color: #3498db; /* Change background color */
+  color: #fff; /* Change text color */
+  text-decoration: none;
+  border-radius: 5px; /* Adjust border-radius for rounded corners */
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+.easystore-join-button:hover {
+  background-color: #2980b9; /* Change background color on hover */
+}
+
+/* Style for the cart count (if applicable) */
+.easystore-cart-count {
+  background-color: #e74c3c; /* Change background color for the count badge */
+  color: #fff; /* Change text color for the count badge */
+  border-radius: 50%; /* Make it a circle */
+  padding: 4px 8px; /* Adjust padding as needed */
+  margin-left: 5px; /* Add some spacing from the "Join" text */
+}
+
 .footersocial i {
     width: 40px;
     height: 40px;
@@ -299,21 +325,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <li class="sp-menu-item"><a href="erotica.html">Erotica</a></li>
 </ul></nav></div></div>
 
-<div id="sp-menu-right" class="col-sm-6 col-4 col-lg-4"><div class="sp-column">
+<div id="sp-menu-right" class="col-sm-6 col-4 col-lg-4">
+  <div class="sp-column">
+    <div class="sp-module">
+      <div class="sp-module-content">
+        <a class="easystore-join-button" href="https://discord.gg/zGjyXFQbMh" target="_blank" rel="noopener noreferrer">
+          <span class="easystore-svg">Join</span>
+          <span class="easystore-cart-count" x-cloak x-show="itemCount > 0" x-text="itemCount"></span>
+        </a>
+      </div>
+    </div>
 
-<div class="sp-module">
-  <div class="sp-module-content">
-    <a class="easystore-cart-icon" x-data="easystore_cart" href="https://discord.gg/zGjyXFQbMh" target="_blank" rel="noopener noreferrer" @click.prevent="$dispatch('drawer.open')">
-      <span class="easystore-svg">Join</span>
-      <span class="easystore-cart-count" x-cloak x-show="itemCount > 0" x-text="itemCount"></span>
-    </a>
+    <ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
+      <li class="sp-menu-item"><a href="https://discord.gg/zGjyXFQbMh">Join</a></li>
+    </ul>
   </div>
 </div>
-
-<ul class="sp-megamenu-parent menu-animation-fade-up d-none d-lg-block">
-<li class="sp-menu-item"><a href="https://discord.gg/zGjyXFQbMh">Join</a></li></ul>
-
-</div></div></div></div></div>
+</div></div></div>
 </header>
 
 
