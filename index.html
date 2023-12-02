@@ -79,7 +79,15 @@ h6{font-family: 'Sora', sans-serif;text-decoration: none;}
 }
 @media (max-width:767px){.sp-megamenu-parent > li > a, .sp-megamenu-parent > li > span, .sp-megamenu-parent .sp-dropdown li.sp-menu-item > a{font-size: 14px;}
 }
+.logo {
+  max-width: 100%; /* Ensure logo is responsive */
+}
+
 @media only screen and (max-width: 767px) {
+  .logo {
+    max-width: 80px; /* Adjust as needed */
+  }
+
   .offcanvas-menu {
     position: fixed;
     right: 0;
@@ -90,11 +98,7 @@ h6{font-family: 'Sora', sans-serif;text-decoration: none;}
     padding-right: 20px; /* Adjust as needed */
   }
 }
-@media only screen and (max-width: 767px) {
-  .logo.logo-small {
-    max-width: 80px; /* Adjust as needed */
-  }
-}
+
 
 	
 
