@@ -137,9 +137,8 @@ a.btn {color:#fff;}
     color: #3c3838;
     margin-top: 10px;
 }
-.logo-image {height:60px;width:115px;}.logo-image-phone {height:55px;width:110px;}
+.logo-image {height:60px;width:115px;}.logo-image-phone {height:35px;width:85px;}
 	</style>
-
 <style>
   @media (max-width: 767px) {
     .offcanvas-menu {
@@ -151,11 +150,16 @@ a.btn {color:#fff;}
       justify-content: space-between;
       align-items: center;
     }
-    .fa-remove {
-      order: 1; /* Change the order to move the menu icon to the right */
+    .left-section {
+      display: flex;
+      align-items: center;
+    }
+    .right-section {
+      margin-left: auto;
     }
   }
 </style>
+
 <script type="application/json" class="joomla-script-options new">{"csrf.token":"87de685139e355806e06dbba8ec9ff76","data":{"breakpoints":{"tablet":991,"mobile":480},"header":{"stickyOffset":"100"}},"system.paths":{"root":"\/2020\/podcast","base":"\/2020\/podcast"}}</script>
 <script src="media/jui/js/jquery.min64a4.js?a7baf0c5daa2e02847853aa3ae315898" type="text/javascript"></script>
 <script src="media/jui/js/jquery-noconflict64a4.js?a7baf0c5daa2e02847853aa3ae315898" type="text/javascript"></script>
@@ -792,6 +796,7 @@ font-size:15px;line-height:22px;}
 <div class="offcanvas-menu">
 <a href="#" class="close-offcanvas"><span class="fa fa-remove"></span></a>
 <div class="offcanvas-inner">
+	<div class="left-section">
 <div class="sp-module "><div class="sp-module-content"><ul class="menu">
 
 <li class="sp-menu-item"><a href="index.html">Home</a></li>
@@ -819,6 +824,9 @@ font-size:15px;line-height:22px;}
 <li class="sp-menu-item"><a href="https://discord.gg/zGjyXFQbMh">Join</a></li>
 </ul></li></ul>
 </div></div>
+	<div class="right-section">
+      <a href="https://discord.gg/zGjyXFQbMh" class="join-button">Join</a>
+    </div>	
 </div>
 </div>
 </body>
