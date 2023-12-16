@@ -2,6 +2,6 @@
 
 @media only screen and (max-width: 768px) {
   .logo-image {
-    margin: 0 70px; /* Adjust the margin for smaller screens */
+    margin: 0 65px; /* Adjust the margin for smaller screens */
   }
 }
