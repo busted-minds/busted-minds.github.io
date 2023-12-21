@@ -3,7 +3,7 @@
 
   .logo-image {
     display: inline-block;
-    width: 69px;
-    height: 31px;
+    max-width: 6px;
+    height: 3px;
   }
 }
