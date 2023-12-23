@@ -31,6 +31,20 @@ const _interaxAI=async()=>{const t=await fetch(`https://interaxai.com/api/embed/
   width: 600;
   height: 800
 }
+
+img {
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+        display: block; /* To remove extra space below the image */
+        margin: 0 auto; /* Center the image */
+    }
+
+    @media (min-width: 600px) {
+        img {
+            max-width: 600px; /* Adjust this value based on your design preference */
+        }
+    }
 </style>
 </head>
 <body class="layout-page">
@@ -98,9 +112,9 @@ const _interaxAI=async()=>{const t=await fetch(`https://interaxai.com/api/embed/
 	<div class="container">
 		<!-- Content ================================================== -->
 		<div class="main-content">
-<h2 class="posttitle">BustedMinds AI Image Generator</h2>
+<center><h2 class="posttitle">BustedMinds AI Image Generator</h2></center> 
 			<br>
-<img src="img.jpg" style="border-radius: 20px;">
+<img src="img.jpg">
 <br><br>
 			<div id="interaxai-widget" style="width: 100%; height: 800px; border: none; overflow: hidden; "></div>
 			<br><br>
