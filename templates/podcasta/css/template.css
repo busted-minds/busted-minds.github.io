@@ -6,3 +6,7 @@
     margin: auto; /* Adjust the margin for smaller screens */
   }
 }
+.logo-image {
+      max-width: 100%;
+      height: auto;
+    }
