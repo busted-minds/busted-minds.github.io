@@ -31,6 +31,36 @@ const _interaxAI=async()=>{const t=await fetch(`https://interaxai.com/api/embed/
   width: 600;
   height: 800
 }
+	img {
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+        display: block; /* To remove extra space below the image */
+        margin: 0 auto; /* Center the image */
+    }
+
+    @media (min-width: 600px) {
+        img {
+            max-width: 600px; /* Adjust this value based on your design preference */
+        }
+    }
+	
+	 .sl {
+        text-decoration: none; /* Remove underline */
+        color: #3498db; /* Set link color */
+        font-weight: bold; /* Make the text bold */
+        padding: 8px 16px; /* Add padding for better appearance */
+        border: 2px solid #3498db; /* Add border */
+        border-radius: 20px; /* Add border-radius for rounded corners */
+        display: inline-block; /* Make it a block element to allow for padding */
+        transition: background-color 0.3s ease; /* Add a smooth transition effect */
+    }
+
+    /* Hover effect */
+    .sl:hover {
+        background-color: #3498db; /* Change background color on hover */
+        color: #fff; /* Change text color on hover */
+    }
 </style>
 </head>
 <body class="layout-page">
@@ -98,13 +128,14 @@ const _interaxAI=async()=>{const t=await fetch(`https://interaxai.com/api/embed/
 	<div class="container">
 		<!-- Content ================================================== -->
 		<div class="main-content">
-<h2 class="posttitle">BustedMinds AI Bot</h2>
+<center><h2 class="posttitle">BustedMinds AI Bot</h2></center> 
 			<br>
-<img src="ai.jpeg" style="border-radius: 20px;">
+<img src="ai.jpeg" >
 <br><br>
 			<div id="interaxai-widget" style="width: 100%; height: 800px; border: none; overflow: hidden; "></div>
-			<br><br>
-  
+			<br>
+  <center> <a href="betachat.htm" class="sl">Try our beta AI assistant</a></center> 
+<br>
 
 
 			<!-- Begin Article================================================== -->
