@@ -49,6 +49,24 @@
             transform: scale(1.05);
 		
         }
+
+	.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-sm-4 {
+    display: flex;
+    align-items: stretch;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
     </style>
 	<title>BustedMinds AI Image Generator</title>
 <meta charset="utf-8">
@@ -73,8 +91,8 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 600;
-  height: 800
+  width: 600px;
+  height: 800px;
 }
 </style>
 <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="560825a0-ef2a-4791-bac7-149a5b394206";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
@@ -124,13 +142,13 @@
 				</div>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="games"target="_blank">Games</a>
+			<a class="nav-link" href="games" target="_blank">Games</a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="about.html"target="_blank">About</a>
+			<a class="nav-link" href="about.html" target="_blank">About</a>
 			</li>
 			<li class="nav-item">
-			<a class="nav-link" href="contact.html"target="_blank">Contact</a>
+			<a class="nav-link" href="contact.html" target="_blank">Contact</a>
 			</li>
 			<li class="nav-item">
 			<a target="_blank" class="nav-link highlight" href="https://discord.gg/zGjyXFQbMh">JOIN</a>
@@ -150,38 +168,42 @@
 			<br>
 
   <!-- AI Product Showcase -->
-                <div class="row">
-                    <div class="col-sm-4">
-                        <div class="product rounded-square">
-                            <div class="product-image">
-                                <img src="ai.jpeg" alt="BustedMinds AI Chat" class="rounded-square-image">
-                            </div>
-                            <h3>BustedMinds AI Chat</h3>
-                            <p>An intelligent Chatbot designed to assist and engage users.</p>
-                            <a href="chat.html" class="btn btn-primary">Access</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="product rounded-square">
-                            <div class="product-image">
-                                <img src="img.jpg" alt="BustedMinds AI Image Generator" class="rounded-square-image">
-                            </div>
-                            <h3>BustedMinds AI Image Generator</h3>
-                            <p>Generate stunning images using advanced AI algorithms.</p>
-                            <a href="img.html" class="btn btn-primary">Access</a>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="product rounded-square">
-                            <div class="product-image">
-                                <img src="gram.png" alt="BustedMinds AI Grammar Correction" class="rounded-square-image">
-                            </div>
-                            <h3>BustedMinds AI Grammar Correction</h3>
-                            <p>Enhance your writing with AI-powered grammar correction.</p>
-                            <a href="grammar.html" class="btn btn-primary">Access</a>
-                        </div>
-                    </div>
+                
+                    <div class="container d-flex justify-content-center">
+    <div class="row w-100">
+        <div class="col-sm-4 d-flex">
+            <div class="product rounded-square">
+                <div class="product-image">
+                    <img src="ai.jpeg" alt="BustedMinds AI Chat" class="rounded-square-image">
                 </div>
+                <h3>BustedMinds AI Chat</h3>
+                <p>An intelligent Chatbot designed to assist and engage users.</p>
+                <a href="chat.html" class="btn btn-primary">Access</a>
+            </div>
+        </div>
+        <div class="col-sm-4 d-flex">
+            <div class="product rounded-square">
+                <div class="product-image">
+                    <img src="img.jpg" alt="BustedMinds AI Image Generator" class="rounded-square-image">
+                </div>
+                <h3>BustedMinds AI Image Generator</h3>
+                <p>Generate stunning images using advanced AI algorithms.</p>
+                <a href="img.html" class="btn btn-primary">Access</a>
+            </div>
+        </div>
+        <div class="col-sm-4 d-flex">
+            <div class="product rounded-square">
+                <div class="product-image">
+                    <img src="gram.png" alt="BustedMinds AI Grammar Correction" class="rounded-square-image">
+                </div>
+                <h3>BustedMinds AI Grammar Correction</h3>
+                <p>Enhance your writing with AI-powered grammar correction.</p>
+                <a href="grammar.html" class="btn btn-primary">Access</a>
+            </div>
+        </div>
+    </div>
+</div>
+
                 <!-- End AI Product Showcase -->		
 			<div class="row">
 
